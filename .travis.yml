@@ -1,0 +1,9 @@
+deploy:
+  provider: openshift
+  user: limcheekin@vobject.com
+  password:
+    secure: muvi62McB1UscZz/AfvW5TLbV2aFb4NXrQR8suqLXEdrgwVlv3XmImxmAP8aVmY2BQt9LuXActb14DurVzqu5pDzt8xg1XXPgL86KCd6YZo8XJkl9bC1okVHGBHz5tg+IaUNX3M3VoIJSt5dCsokXXl4SKsTy56DLw76xHoHZ7VD9vli6u077/OlV+jcByGb7I1VGVWLAuN2iAp8sY/vkurV0U6rA6ImZ0NO8+1mqjmVCzKZu+mLXlN6BKX7WfM0Rs3VUMEf6HbaExGNZtaft+EV0iO41XDB7h6Sl7wLo5TI9se5Fxp0TRBEpxd5owae4FNdOBFQRQh6462CaHWJGBsU3XbzmmKR9GRVoXW6TPtubkUTjXQ/Ceq7wxdi594hwrY6n141biIJv6lZ+dTMTsSZlEcCFi+QJIOs0TN+9BdJ3bM+wP2sT/dPPmVKhAthdV8EbZ8HbUAntx1bqUcxajN9yoWId61lvuA5b9NTZCEGDnnKpdbctP77EeWe8Zl0eXcTwZjZMc5BE2ug0K7FqUlQbe0D5isHW3FXJo4RmCKGhk/XB1tAT6PhGH43FJdTlN215nGeuYK+tj+xw2tmKJu2l1DLW/NtEEr21+C6VnPYxkagk3KXwt3ti2vhm4C9ysCEIyT/Kzl8s+fuXm7er9HWGwPBDFjWwu4maqJZUmg=
+  app: easycrm
+  domain: qprofit
+  on:
+    repo: limcheekin/gr8crm-all
