@@ -11,6 +11,7 @@ script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stackt
 before_deploy:
   - mv ./target/gr8crm-all.war ./deployments/ROOT.war
   - git add ./deployments/ROOT.war
+  - git commit -m "deployment by travis"
 
 deploy:
   provider: openshift
@@ -21,3 +22,4 @@ deploy:
   domain: qprofit
   on:
     repo: limcheekin/gr8crm-all
+  skip_cleanup: true
