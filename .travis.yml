@@ -10,6 +10,7 @@ script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stackt
 
 before_deploy:
   - mv ./target/gr8crm-all.war ./deployments/ROOT.war
+  - git add ./deployments/ROOT.war
 
 deploy:
   provider: openshift
