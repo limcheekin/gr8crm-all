@@ -11,6 +11,8 @@ script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stackt
 before_deploy:
   - mv ./target/gr8crm-all.war ./deployments/ROOT.war
   - git add ./deployments/ROOT.war
+  - git config user.email "limcheekin@vobject.com"
+  - git config user.name "limcheekin"
   - git commit -m "deployment by travis"
 
 deploy:
