@@ -9,7 +9,8 @@ before_script:
 script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stacktrace && ./grailsw war
 
 before_deploy:
-  - mv ./target/gr8crm-all.war ./deployments/easycrm.war
+  - mv ./target/gr8crm-all.war ./deployments/ROOT.war
+  - git add ./deployments/ROOT.war
 
 deploy:
   provider: openshift
