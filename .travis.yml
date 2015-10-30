@@ -9,7 +9,7 @@ before_script:
 script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stacktrace && ./grailsw war
 
 before_deploy:
-  - chmod +x grailsw
+  - mv ./target/gr8crm-all.war ./deployments && git add ./deployments/gr8crm-all.war
 
 deploy:
   provider: openshift
