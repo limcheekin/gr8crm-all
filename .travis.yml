@@ -1,15 +1,15 @@
 language: groovy
 
 jdk:
-  — oraclejdk8
+  - oraclejdk8
 
 before_script:
-  — chmod +x grailsw
+  - chmod +x grailsw
 
 script: ./grailsw clean && ./grailsw "test-app unit:" --non-interactive --stacktrace && ./grailsw war
 
 before_deploy:
-  — chmod +x grailsw
+  - chmod +x grailsw
 
 deploy:
   provider: openshift
