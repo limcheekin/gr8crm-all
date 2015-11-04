@@ -12,4 +12,6 @@ build/
 .asscache
 0/
 target/
+plugins/
+deployments/
 .dpl/
